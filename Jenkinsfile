@@ -16,10 +16,10 @@ environment {
                 scannerHome = tool 'valaxy-sonar-scanner'
             }
             steps {
-            withSonarQubeEnv('valaxy-sonarqube-server') { // Will pick the global server connection you have configured
-              sh "${scannerHome}/bin/sonar-scanner"
-            }
-            }
+                withSonarQubeEnv('valaxy-sonarqube-server') { // Will pick the global server connection you have configured
+            sh '${scannerHome}/bin/sonar-scanner'
+        }
+        }
         }
     }
 }
