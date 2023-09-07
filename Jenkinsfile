@@ -1,4 +1,4 @@
-def registry = 'https://xfusioncorp.jfrog.io'
+def registry = 'https://valaxy091.jfrog.io/'
 pipeline {
     agent {
         label 'maven'
